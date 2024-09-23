@@ -39,17 +39,30 @@ class TodoApp:
             print("Welcome to our app")
             print("Press 1 to create a mew to do")
             print("Press 2 to check list of your todoe's")
-            print("Press 3 to exit the app")
+            print("press 3 to mark todo as done")
+            print("Press 4 to exit the app")
             user_choice = input("Enter your choice: ")
             if user_choice == "1":
                 self.add_todo()
             elif user_choice == "2":
                 self.display_todos()
             elif user_choice == "3":
+                self.display_todos()
+                print("Print '1' to finish chosen todo \nPrint '2' to go back to the menu")
+                f_todo = input()
+                if f_todo == "1":
+                    print("adf")
+                elif user_choice == "2":
+                    break
+                else:
+                    print("Invalid choise")
+            elif user_choice == "4":
                 print("Thank you for using our app")
                 break
             else:
                 print("Invalid choice")
+
+
 
 
 if __name__ == "__main__":
