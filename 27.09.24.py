@@ -18,3 +18,18 @@ for i in word:
         count +=1
 
 print("Count", count)
+
+i = 5
+while i <= 15:
+    print(i)
+    i +=2
+
+isHisCar = True
+while isHisCar:
+    question = input("Just print magic word!")
+    if question == "stop":
+        isHisCar = False
+        print("here you go!")
+        break
+    else :
+        print(question)
