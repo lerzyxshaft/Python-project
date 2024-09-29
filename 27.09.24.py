@@ -10,7 +10,6 @@ for i in password:
     else :
         break
 
-
 count = 0
 word = "Hello world"
 for i in word:
@@ -42,7 +41,6 @@ for i in range(1, 11):
         continue
 
     print(i)
-
 
 found = None
 for i in "hello":
