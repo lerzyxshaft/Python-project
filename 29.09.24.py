@@ -18,7 +18,25 @@ numbers.extend([3, 6, 5]) #дозволяє додати наявні елеме
 numbers.sort() #сортує числа в списку
 numbers.reverse() #перекручує сортування чисел
 numbers.pop() #видаляє останній елемент, в дужках можна вибрати під яким індексом буде видалено елемент
-numbers.remove(True)#видаляє написаний в дужках елемент
+#numbers.remove() #видаляє написаний в дужках елемент
+#numbers.clear() #видаляє всі елементи в списку
+print(numbers.count(5)) #рахує скільки елементів в списку (елемент котрий буде рахуватись позначений в дужках)
+print(len(numbers)) #довжина всього списка (кілкість символів, чисел, слів в ньому)
+
+nums = [3, 6, 7,  "50", False]
+
+for el in nums:
+    el *= 2
+    print(el)
+
+n = int(input("Enter lenth"))
+user_list = []
+i = 0
+while i < n:
+    string = "Enter a number #" + str(i + 1) + ":"
+    user_list.append(input(string))
+    i += 1
+print(user_list)
 
 
 print(numbers)
