@@ -32,8 +32,22 @@ print(countries.get("code"))
 countries.popitem()
 #countries.clear()
 print(cont)
+countries["3"] = "USA"
 print(cont.items())
-print.countries
 for key, value in cont.items():
     print(key, "-", value)
+print(countries.values())
 
+person = {
+    'user_1' : {
+        'first_name' : "John",
+        'last_name' : "Marley",
+        'age' : '45',
+        'address' : ["New York", "Washington Street", "32"],
+        'marks' : {"math" : 5, "chemistry" : 6}
+    },
+    'user_2' : {
+
+    }
+}
+print(person["user_1"]["address"][1])
