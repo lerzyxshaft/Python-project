@@ -21,3 +21,19 @@ print(new_nums)
 
 word = tuple("hello world")
 print(word)
+
+#####05.10.24#####
+#DICTIONARIES
+countries = {'code': 3, 'numb' : 144 }#you can use '()' inside dict and bulls
+print(countries['code'])
+cont = dict(code = 'UA', number = '+1', name = 'Ukraine')
+print(cont['code'])
+print(countries.get("code"))
+countries.popitem()
+#countries.clear()
+print(cont)
+print(cont.items())
+print.countries
+for key, value in cont.items():
+    print(key, "-", value)
+
