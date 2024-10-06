@@ -51,3 +51,21 @@ person = {
     }
 }
 print(person["user_1"]["address"][1])
+
+
+#####06.10.24#####
+#SET FROZENSET
+data = {3, 5, 6, 2, 4}
+data.add([32])
+data.update([32, True, 3, 4, 3.4, 'hello'])
+data.remove(True)
+data.pop()
+
+nums = [3, 2, 2, 3]
+new_nums = set(nums)
+
+new_data = frozenset([32, True, 3, 4, 3.4, 'hello', 3, 4321, 34, 345, 35])
+new_data
+
+print(data)
+print(new_data)
