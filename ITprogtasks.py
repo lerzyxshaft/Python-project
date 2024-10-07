@@ -56,7 +56,6 @@ print(person["user_1"]["address"][1])
 #####06.10.24#####
 #SET FROZENSET
 data = {3, 5, 6, 2, 4}
-data.add([32])
 data.update([32, True, 3, 4, 3.4, 'hello'])
 data.remove(True)
 data.pop()
@@ -68,3 +67,12 @@ new_data = frozenset([32, True, 3, 4, 3.4, 'hello', 3, 4321, 34, 345, 35])
 
 print(data)
 print(new_data)
+
+#####07.10.24#####
+#DEF, LAMBDA
+def test_func(word):
+    print(word, end = "")
+    print("!")
+
+
+test_func("hello")
