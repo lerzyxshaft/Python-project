@@ -78,7 +78,6 @@ def test_func(word):
 test_func("hello")
 
 #####08.10.24#####
-data = {3, 5, 6, 2, 4}
-data.update([32, True, 3, 4, 3.4, 'hello'])
-data.remove(True)
-data.pop()
+def summa(a, b):
+    res = a + b
+    print("Result"
