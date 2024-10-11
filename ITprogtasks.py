@@ -79,5 +79,38 @@ test_func("hello")
 
 #####08.10.24#####
 def summa(a, b):
-    res = a + b
-    print("Result"
+    return a + b
+
+print(3 + 1)
+print("h" + "i")
+
+
+nums1 = [1, 4, 6, 4, 5]
+minm = nums1[0]
+for el in nums1:
+    if el < minm:
+        minm = el
+
+print(min)
+
+
+def minimal(l):
+    min_num = l[0]
+    for el in l:
+        if el < min_num:
+            min_num = el
+    print(min_num)
+
+nums1 = [1, 4, 6, 4, 5]
+minimal(nums1)
+
+######10.10.24#####
+#LAMBDA
+func = lambda x, y: x * y
+res = (func(2, 4))
+print(res)
+
+file = open('data/text.txt', "w")
+file.write("Hello \n")
+file.write("!!!!")
+file.close()
