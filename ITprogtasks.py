@@ -110,7 +110,21 @@ func = lambda x, y: x * y
 res = (func(2, 4))
 print(res)
 
-file = open('data/text.txt', "w")
+
+#FILES
+data = input("Add mark to your dairy:")
+#file = open('data/text.txt', "w") #when we use w we write smth into our document and after closing everything will be deleated
+file = open('data/text.txt', "a")# 'a' - 'append' add text to the end
+
 file.write("Hello \n")
-file.write("!!!!")
+
+file.write(data + "\n")
+file.close()
+
+file = open('data/text.txt', 'r')
+
+#print(file.read(20))#first 20 symbols
+for line in file:
+    print(line, end="")
+
 file.close()
