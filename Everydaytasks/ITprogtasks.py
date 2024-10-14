@@ -114,14 +114,14 @@ print(res)
 #FILES
 data = input("Add mark to your dairy:")
 #file = open('data/text.txt', "w") #when we use w we write smth into our document and after closing everything will be deleated
-file = open('data/text.txt', "a")# 'a' - 'append' add text to the end
+file = open('../data/text.txt', "a")# 'a' - 'append' add text to the end
 
 file.write("Hello \n")
 
 file.write(data + "\n")
 file.close()
 
-file = open('data/text.txt', 'r')
+file = open('../data/text.txt', 'r')
 
 #print(file.read(20))#first 20 symbols
 for line in file:
@@ -129,3 +129,22 @@ for line in file:
 
 file.close()
 
+######14.10.24######
+x = 0
+while x == 0:
+    try:
+        x = input("Write the number")
+        x += 5
+        print(x)
+    except ValueError:
+        print("Invalid input")
+
+try:
+    x = 5 / 0
+    x = int(input())
+except ZeroDivisionError:
+    print("Деление на ноль!")
+except ValueError:
+    print("Вы ввели что-то не так")
+finally:
+    print("Finally")
