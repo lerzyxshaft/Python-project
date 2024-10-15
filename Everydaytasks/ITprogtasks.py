@@ -148,3 +148,5 @@ except ValueError:
     print("Вы ввели что-то не так")
 finally:
     print("Finally")
+
+######15.10.24######

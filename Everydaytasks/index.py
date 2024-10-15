@@ -33,13 +33,21 @@ class TodoApp:
             print("Your todos: ")
             print(todo)
 
+    def mark_as_completed(self):
+        print(self.display_todos)
+        mark_as_done = input("Chose todo which you wanna mark as done(1, 2, 3,...)")
+        #mark_as_done = int(mark_as_done)
+        mark_as_done = +1
+        from self.todos() remove(mark_as_done)
+        self.run()
 
     def run(self):
         while True:
             print("Welcome to our app")
-            print("Press 1 to create a mew to do")
-            print("Press 2 to check list of your todoe's")
+            print("Press 1 to create a new to do")
+            print("Press 2 to check list of your todo's")
             print("Press 3 to exit the app")
+            print("Press 4 to mark as done")
             user_choice = input("Enter your choice: ")
             if user_choice == "1":
                 self.add_todo()
@@ -48,6 +56,8 @@ class TodoApp:
             elif user_choice == "3":
                 print("Thank you for using our app")
                 break
+            elif user_choice == "4":
+                self.mark_as_completed()
             else:
                 print("Invalid choice")
 
