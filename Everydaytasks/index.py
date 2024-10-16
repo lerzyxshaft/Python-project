@@ -34,11 +34,12 @@ class TodoApp:
             print(todo)
 
     def mark_as_completed(self):
-        print(self.display_todos)
+        print(self.display_todos())
         mark_as_done = input("Chose todo which you wanna mark as done(1, 2, 3,...)")
-        #mark_as_done = int(mark_as_done)
+        mark_as_done = int(mark_as_done)
         mark_as_done = +1
-        from self.todos() remove(mark_as_done)
+        for mark_as_done in self.todos :
+            self.todos.remove(mark_as_done)
         self.run()
 
     def run(self):
