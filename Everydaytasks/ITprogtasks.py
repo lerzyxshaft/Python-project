@@ -149,4 +149,12 @@ except ValueError:
 finally:
     print("Finally")
 
-######15.10.24######
+######18.10.24######
+
+try:
+    with open('text1.txt', 'r', encoding = 'utf-8') as file: #with using this command instead just open we by one funcktion opens and close it.
+        print(file.read())
+except FileNotFoundError:
+    print('File is not finded')
+finally:
+    file.close()
