@@ -15,4 +15,5 @@ cat1 = Cat()
 cat1.set_data('barsik', 11, True)
 print(cat1)
 
+print('15 Nov')
 
